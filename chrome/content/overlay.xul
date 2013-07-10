@@ -12,7 +12,7 @@
         accesskey="W"
         label="Wunderlist"
         tooltiptext="Create a task from this e-mail"
-        oncommand="wunderlist_thunderbird.createTask(event);"
+        oncommand="createTask(event);"
         class="toolbarbutton-1 msgHeaderView-button wunderlist"
       />
   </toolbarpalette>
