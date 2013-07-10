@@ -50,9 +50,10 @@
         var folder = message.folder;
         var uri = folder.getUriForMsg(message);
         messenger.messageServiceFromURI(uri).streamMessage(uri, listener, null, null, false, "");
-
+        var tag = prefs.getCharPref("tag");
+ 
         // Get title, author, recipients and message
-        var title = trim(message.mime2DecodedSubject, 150) + " #mail";
+        var title = trim(message.mime2DecodedSubject, 150) + " " + tag;
         var author = "From: " + message.mime2DecodedAuthor + "\n";
         var recipients = "To: " + message.mime2DecodedRecipients + "\n\n";
         var content = folder.getMsgTextFromStream(listener.inputStream, message.Charset,
