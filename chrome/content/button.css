@@ -1,0 +1,12 @@
+#wunderlist-button, #wrapper-wunderlist-button {
+    list-style-image: url("chrome://wunderlist/content/button.png");
+}
+
+/* CSS reference: rect(top, left, bottom, right) */
+.wunderlist {
+    -moz-image-region: rect( 0px 24px 24px  0px);
+}
+
+[iconsize="small"] .wunderlist {
+    -moz-image-region: rect( 0px 40px 16px 24px);
+}

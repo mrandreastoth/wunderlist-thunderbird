@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="chrome://wunderlist/content/button.css"?>
+
+<overlay id="wunderlist-overlay"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <script type="application/x-javascript" src="chrome://wunderlist/content/overlay.js"/>
+
+  <toolbarpalette id="header-view-toolbar-palette">
+    <toolbarbutton 
+        id="wunderlist-button"
+        accesskey="W"
+        label="Wunderlist"
+        tooltiptext="Create a task from this e-mail"
+        oncommand="wunderlist_thunderbird.createTask(event);"
+        class="toolbarbutton-1 msgHeaderView-button wunderlist"
+      />
+  </toolbarpalette>
+
+</overlay>

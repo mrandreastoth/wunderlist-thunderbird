@@ -1,0 +1,3 @@
+content wunderlist chrome/content/
+
+overlay chrome://messenger/content/messenger.xul chrome://wunderlist/content/overlay.xul
